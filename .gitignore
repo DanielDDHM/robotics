@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+.DS_Store
+# PNGs gerados pelos experimentos ficam fora; so as imagens dos READMEs sao versionadas
+*.png
+!*/images/*.png
