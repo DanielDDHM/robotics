@@ -17,6 +17,9 @@ Cada lição roda com `python sim.py <experimento>` dentro da pasta dela. Para a
 | 02 | [Go-to-goal e calibração de odometria](02-go-to-goal/) | navegação ponto a ponto, cinemática inversa, diagnóstico do drift e calibração do wheel base (erro de 30 cm para 3 cm)<br><img src="02-go-to-goal/images/square_nominal.png" width="300"> <img src="02-go-to-goal/images/square_calibrado.png" width="300"> |
 | 03 | [IMU e fusão de sensores](03-imu-fusion/) | giroscópio MEMS simulado (bias, deriva térmica), filtro complementar e EKF que aprende o bias e o wheel base sozinho (erro após 8 voltas: de 72 cm para 6 cm)<br><img src="03-imu-fusion/images/errors.png" width="600"> |
 
+## Hardware
+A lista de materiais para a prática física (robô 2WD com ESP32-S3, encoders, MPU6050), com preços, links e pontos de atenção, está em [`hardware/`](hardware/).
+
 ## Próximas
 - ROS 2 + Gazebo: URDF, TF2, SLAM, Nav2
 - Percepção com redes neurais: PyTorch, detecção de objetos (YOLO) integrada à navegação
