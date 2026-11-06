@@ -14,9 +14,9 @@ Cada lição roda com `python sim.py <experimento>` dentro da pasta dela. Para a
 | # | lição | o que tem |
 |---|---|---|
 | 01 | [Robô diferencial, PID e odometria](01-diff-drive/) | cinemática diferencial, PID de velocidade com anti-windup, odometria por encoders<br><img src="01-diff-drive/images/compare.png" width="420"> |
+| 02 | [Go-to-goal e calibração de odometria](02-go-to-goal/) | navegação ponto a ponto, cinemática inversa, diagnóstico do drift e calibração do wheel base (erro de 30 cm para 3 cm)<br><img src="02-go-to-goal/images/square_nominal.png" width="300"> <img src="02-go-to-goal/images/square_calibrado.png" width="300"> |
 
 ## Próximas
-- Go-to-goal: navegação ponto a ponto
 - Fusão de sensores: IMU + odometria (filtro complementar e filtro de Kalman)
 - ROS 2 + Gazebo: URDF, TF2, SLAM, Nav2
 - Percepção com redes neurais: PyTorch, detecção de objetos (YOLO) integrada à navegação
