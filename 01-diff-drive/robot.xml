@@ -23,6 +23,8 @@
     <body name="chassis" pos="0 0 0.035">
       <freejoint name="root"/>
       <geom name="body" type="box" size=".10 .07 .02" rgba=".85 .35 .2 1" mass="1.0"/>
+      <!-- IMU no centro do chassi (licao 03) -->
+      <site name="imu" pos="0 0 0"/>
       <!-- Seta indicando a frente do robo (+x) -->
       <geom type="box" pos=".09 0 .025" size=".015 .01 .005" rgba="1 1 1 1" mass="0" contype="0" conaffinity="0"/>
 
@@ -47,4 +49,9 @@
     <motor name="left_motor" joint="left" ctrlrange="-0.3 0.3" ctrllimited="true"/>
     <motor name="right_motor" joint="right" ctrllimited="true" ctrlrange="-0.3 0.3"/>
   </actuator>
+
+  <sensor>
+    <!-- Velocidade angular ideal no referencial do IMU. Os defeitos de um MEMS real sao adicionados no robot.py -->
+    <gyro name="gyro" site="imu"/>
+  </sensor>
 </mujoco>

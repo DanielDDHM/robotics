@@ -6,7 +6,7 @@
 | arquivo | o que é |
 |---|---|
 | `robot.xml` | modelo físico do robô (MJCF, o formato do MuJoCo) |
-| `robot.py` | "driver de hardware" simulado: encoders quantizados, torque com ruído, motor direito 7% mais fraco |
+| `robot.py` | "driver de hardware" simulado: encoders quantizados, torque com ruído, motor direito 7% mais fraco (e, desde a lição 03, um giroscópio) |
 | `controllers.py` | PID com anti-windup e odometria |
 | `sim.py` | experimentos que geram gráficos |
 
